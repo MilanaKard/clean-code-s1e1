@@ -34,6 +34,7 @@
   margin: 0 auto 0;
 } 
 
+.task,
 .input-task {
   width: 56%;
   display: inline-block;
@@ -152,7 +153,8 @@
 }
 
 /* Completed */
-.completed__task {
+.completed__tasks .task,
+.completed__tasks .text-input {
   text-decoration: line-through;
   color: #888;
 }
@@ -162,11 +164,11 @@
   display: none;
 }
 
-.todo__edit-mode .text-input {
+.task-list .task-item.todo__edit-mode .text-input {
   display:inline-block;
   width: 224px;
 }
 
-.todo__edit-mode .todo__task {
+.task-list .task-item.todo__edit-mode .task {
   display: none;
 }
