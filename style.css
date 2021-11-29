@@ -12,11 +12,11 @@
   text-align: right;
 }
 
-.header .img {
+.header__img {
   width: 100%;
 }
 
-.header .more-info {
+.header__more-info {
   font-family: fantasy, cursive;
 }
 
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.task-wrapper {
+.add-task__wrapper {
   display: flex;
 }
 
@@ -75,7 +75,7 @@
 
 /* Heading */
 .title,
-.label-task {
+.add-task__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -103,12 +103,12 @@
 }
 
 /* New Task */
-.label-task {
+.add-task__label {
   display: block;
   margin: 0 0 20px;
 }
 
-.input.new-task {
+.add-task__new {
   width: 318px;
 }
 
@@ -141,32 +141,32 @@
   width: 226px;
 }
 
-.button.delete .img {
+.delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.delete .img:hover {
+.delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.task-list.completed-tasks .task {
+.completed__task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task-list .task-item .text-input {
+.task-item .text-input {
   display: none;
 }
 
-.task-list .task-item.edit-mode .text-input {
+.todo__edit-mode .text-input {
   display:inline-block;
   width: 224px;
 }
 
-.task-list .task-item.edit-mode .task {
+.todo__edit-mode .todo__task {
   display: none;
 }
